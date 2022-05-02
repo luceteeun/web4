@@ -1,0 +1,37 @@
+@import url(./fonts.css);
+@import url(./reset.css);
+
+#wrap {width:100%;}
+#wrap #main {width:100%;}
+#wrap #main #section1 {width:100%;}
+#wrap #main #section1 .slide-container {width:100%;position:relative;}
+#wrap #main #section1 .slide-container .slide-view {width:100%;overflow:hidden;position:relative;z-index:1;}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap {width:800%;display:flex;margin-left:-100%;position:relative;}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide {width:100%;height:100vh;background:url(../img/main-slide1.jpg) no-repeat 50% 50%;background-size:cover;}
+
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide1 {background-image:url(../img/main-slide1.jpg);}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide2 {background-image:url(../img/main-slide2.jpg);}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide3 {background-image:url(../img/main-slide3.jpg);}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide4 {background-image:url(../img/main-slide4.jpg);}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide5 {background-image:url(../img/main-slide5.jpg);}
+#wrap #main #section1 .slide-container .slide-view .slide-wrap .slide6 {background-image:url(../img/main-slide6.jpg);}
+
+/* 화살버튼 */
+#wrap #main #section1 .slide-container .next-btn-box {position:absolute;top:50%;right:30px;width:100px;height:100px;margin-top:-50px;display:block;z-index:2;}
+#wrap #main #section1 .slide-container .next-btn-box a {display:block;width:100%;height:100%;color:#fff;}
+#wrap #main #section1 .slide-container .next-btn-box a i {font-size:100px;}
+
+#wrap #main #section1 .slide-container .prev-btn-box {position:absolute;top:50%;left:30px;width:100px;height:100px;margin-top:-50px;display:block;z-index:2;}
+#wrap #main #section1 .slide-container .prev-btn-box a {display:block;width:100%;height:100%;color:#fff;}
+#wrap #main #section1 .slide-container .prev-btn-box a i {font-size:100px;}
+
+
+/* 하단버튼 */
+#wrap #main #section1 .slide-container .page-btn-box {width:100%;height:12px;position:absolute;bottom:30px;left:0;z-index:2;text-align:center;}
+#wrap #main #section1 .slide-container .page-btn-box span {display:inline-block;width:12px;height:12px;margin:0 5px;}
+#wrap #main #section1 .slide-container .page-btn-box span a {box-sizing:content-box;display:block;width:8px;height:8px;background:rgba(255,255,255, .6);border-radius:50%;outline:2px solid rgba(255,255,255, 0);transition:all .3s;} 
+#wrap #main #section1 .slide-container .page-btn-box span a.on {background:rgba(255,255,255, 0);outline:2.5px solid rgba(255,255,255, 1);} 
+
+
+#wrap #main #section1 .slide-container .page-btn-box span:nth-child(7) a {border-radius:0;background:none;width:12px;height:12px;position:relative;}
+#wrap #main #section1 .slide-container .page-btn-box span:nth-child(7) a i {color:#fff;font-size:12px;position:absolute;top:-2px;left:0;}
